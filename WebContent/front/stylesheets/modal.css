@@ -1,0 +1,20 @@
+.modal-foot {
+    position: relative;
+    padding: 15px;
+	margin-top:10px;
+}
+.modal-foot * {
+	margin-left:30px;
+}
+.modal {
+	border: 1px solid #e6e6e6;
+    box-shadow: none;
+}
+.modal-header h4.modal-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+}
+.modal-body label {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}

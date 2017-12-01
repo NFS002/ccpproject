@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CP Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../stylesheets/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Metis Menu Plugin CSS -->
+    <link href="../metisMenu/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="" href="index.html">
+                <img src="../imgs/cp-logo.jpg" height="50">
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                {name}
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="profile.html"><i class="fa fa-user fa-fw"></i> Account</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="contracts.html"><i class="fa fa-edit fa-fw"></i> Contracts</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="products.html"><i class="fa fa-shopping-bag fa-fw"></i> Products</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="messages.html"><i class="fa fa-envelope fa-fw"></i> Messages</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Utilities<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="javascript:;"><i class="fa fa-cog fa-fw"></i> Preferences</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><i class="fa fa-question fa-fw"></i> Help and support</a>
+                            </li>
+                            <li>
+                                <a href="scancode.html"><i class="fa fa-credit-card fa-fw"></i> Scan a code</a>
+                            </li>
+                            <li>
+                                <a href="search.html"><i class="fa fa-search fa-fw"></i> Search for another account, product or contract</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-top-links-replacement">
+                        <hr class="sidebar-border">
+                        <a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Sign out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div id="inner-container">
+                <div class="row">
+                    <div class="container-header col-lg-12 col-md-12">
+                        <h4>
+                            Search for an account, contract or product
+                            <br>
+                            <br>
+                        </h4>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6">
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"> Account</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio"> Contract</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" > Product</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <label for="comment">Enter a word, product description, value or ID number</label>
+                                <textarea class="form-control" rows="2" id="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="search-options">
+                                <h4>Search Options</h4>
+                            </div>
+                            <button class="btn btn-primary">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>CID</th>
+                                    <th>Send/Receive</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="search-options">
+                                <h4>Filter Options</h4>
+                            </div>
+                            <button class="btn btn-primary">
+                                Filter Results
+                            </button>
+                    </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../metisMenu/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

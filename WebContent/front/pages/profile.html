@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>CP Template</title>
+
+<!-- Bootstrap Core CSS -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../stylesheets/sb-admin-2.css" rel="stylesheet">
+
+<!-- Metis Menu Plugin CSS -->
+<link href="../metisMenu/metisMenu.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- Modal CSS -->
+<link href="../stylesheets/modal.css" rel="stylesheet"> 
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="" href="index.html"> <img src="../imgs/cp-logo.jpg"
+					height="50">
+				</a>
+			</div>
+			<!-- /.navbar-header -->
+
+			<ul class="nav navbar-top-links navbar-right">
+				<!-- /.dropdown -->
+				<li id='navNameTxt' class="dropdown"></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> User
+								Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+				<!-- /.dropdown -->
+			</ul>
+			<!-- /.navbar-top-links -->
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group -->
+						</li>
+						<li><a href="index.html"><i class="fa fa-dashboard fa-fw"></i>
+								Dashboard</a></li>
+						<li>
+							<hr class="sidebar-border"> <a href="profile.html"><i
+								class="fa fa-user fa-fw"></i> Account</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="contracts.html"><i
+								class="fa fa-edit fa-fw"></i> Contracts</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="products.html"><i
+								class="fa fa-shopping-bag fa-fw"></i> Products</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="messages.html"><i
+								class="fa fa-envelope fa-fw"></i> Messages</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="#"><i
+								class="fa fa-wrench fa-fw"></i> Utilities<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="javascript:;"><i class="fa fa-cog fa-fw"></i>
+										Preferences</a></li>
+								<li><a href="javascript:;"><i
+										class="fa fa-question fa-fw"></i> Help and support</a></li>
+								<li><a href="scancode.html"><i
+										class="fa fa-credit-card fa-fw"></i> Scan a code</a></li>
+								<li><a href="search.html"><i class="fa fa-search fa-fw"></i>
+										Search for another account, product or contract</a></li>
+							</ul>
+						</li>
+						<li class="navbar-top-links-replacement">
+							<hr class="sidebar-border"> <a href="login.html"><i
+								class="fa fa-sign-out fa-fw"></i>Sign out</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+			<!-- /.navbar-static-side -->
+		</nav>
+
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<div id="inner-container">
+					<div class="row">
+						<div class="container-header">
+							<br>
+						</div>
+					</div>
+					<div class="row">
+						<div align="center" class="col-lg-4 col-md-3">
+							<img id='profile-pic' src="../imgs/noprofile-big.png"
+								width="150px" height="150px" class="img-responsive">
+							<p class="pane-text"
+								style="text-align: center; padding: 10px; font-style: italic;"></p>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<table class="profile-info" class='profile-table'>
+								<tr>
+									<td id='nameTxt'></td>
+								</tr>
+								<tr>
+									<td id='unameTxt'></td>
+								</tr>
+								<tr>
+									<td id='dobTxt'></td>
+								</tr>
+								<tr>
+									<td id='emailTxt'></td>
+									<td><i id='email-ban' class="fa fa-ban fa-fw"></i></td>
+								</tr>
+								<tr>
+									<td id='phoneTxt'></td>
+									<td><i id='phone-ban' class="fa fa-ban fa-fw"></i></td>
+								</tr>
+								<tr>
+									<td id='aidTxt'></td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<table id='address-table' class="profile-table">
+								<tr>
+									<td id='streetTxt'></td>
+								</tr>
+								<tr>
+									<td id=cityTxt></td>
+								</tr>
+								<tr>
+									<td id='countyTxt'></td>
+								</tr>
+								<tr>
+									<td id='countryTxt'></td>
+								</tr>
+								<tr>
+									<td id='postcodeTxt'></td>
+								</tr>
+							</table>
+							<div>
+								<div>
+									<a>KYC Verified <i id='kycBan ' class="fa fa-ban fa-fw"></i></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+					<div class="row">
+						<div class="col-lg-12">
+							<div>
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group input-group">
+										<input disabled id='emailIn' placeholder="Email"
+											class="form-control"> <span class="input-group-addon"><a
+											id='emailBt'>Change</a></span>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<div class="form-group input-group">
+										<input disabled id='phoneIn' placeholder="Phonenumber"
+											class="form-control"> <span id='phoneChange'
+											class="input-group-addon"><a id='phoneBt'>Change</a></span>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12">
+									<div class="form-group input-group">
+										<input disabled id='addressIn' placeholder="Address - start typing to search"class="form-control"> 
+										<span class="input-group-addon"><a id='manualBt'>Input manually</a></span> 
+										<span class="input-group-addon"><a id='addressBt'>Change</a></span>
+										
+									</div>
+									<div align='center' id='addressInfo' class='form-label-horizontal'>
+										<div>
+											<p>House number/street</p>
+											<input id='houseIn' class='form-control'>
+										</div>
+										<div>
+											<p>Town/City</p>
+											<input id ='cityIn' class='form-control'>
+										</div>
+										<div>
+											<p>Country</p>
+											<input id='countryIn' class='form-control'>
+										</div>
+										<div>
+											<p>Zip code: </p>
+											<input id='zipIn' class='form-control'>
+										</div>
+									</div>
+									<div id='pageErrBox' style='float: right; margin-top: 50px;'
+										class='col-lg-6'>
+										<p class='warn'>If you wish to change your email address,
+											phone number, address, or password, please note any
+											validation that has taken place on your account using these
+											details will be reset, and will have to be verified again
+											after. If you wish to proceed, please click the button below.
+										</p>
+										<div id='warnControls'>
+											<div class="checkbox">
+												<label><input id='checkbox' type="checkbox" value="">I
+													have read and agree to the warning above</label>
+											</div>
+											<button id='warnBt' class='btn btn-warning'>Confirm</button>
+										</div>
+									</div>
+									<div class="input-group col-lg-4">
+										<div id="pw-form">
+											<h3>Change your password</h3>
+											<form>
+												<p>Old password:</p>
+												<input disabled type="password" name="oldPwIn" id="oldPwIn"
+													class="form-control">
+												<p>New Password:</p>
+												<input disabled type="password" name="pwIn" id="pwIn"
+													class="form-control">
+												<p>Retype new password:</p>
+												<input disabled type="password" name="pwInRepeat"
+													id="pwInRepeat" class="form-control">
+											</form>											
+										</div>
+									</div>
+									<div class='form-group'></div>
+											<button class='btn btn-primary' id='pwBt'>Submit</button>
+											<span id='pwErrBox'></span>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div>
+	<!-- /#wrapper -->
+	<a id='modalBt' href="#modal" data-toggle="modal"></a>
+	<div class="tickBt"></div>
+	<!-- Modal -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog"
+		tabindex="-1" id="modal" class="modal fade" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" data-dismiss="modal" class="close"
+						type="button">×</button>
+					<h4 class="modal-title">Confirm your action</h4>
+				</div>
+				<div class="modal-body">
+					<p id='modalTxt'></p>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- SVG tick -->
+	<div id='tickBox' style='display: none'>
+		<svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			viewBox="0 0 37 37" style="enable-background: new 0 0 37 37;"
+			xml:space="preserve">
+<path class="circ path"
+				style="fill:none;stroke:#191;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;"
+				d="
+	M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z" />
+<polyline class="tick path"
+				style="fill:none;stroke:#000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;"
+				points="
+	11.6,20 15.9,24.2 26.4,13.8 " />
+</svg>
+	</div>
+	<!-- SCG tick -->
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../metisMenu/metisMenu.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../js/sb-admin-2.js"></script>
+
+	<!-- Custom JavaScript -->
+	<script src="../js/profile.js"></script>
+
+
+</body>
+
+</html>
+

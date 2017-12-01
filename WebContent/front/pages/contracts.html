@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>CP Template</title>
+
+<!-- Bootstrap Core CSS -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../stylesheets/sb-admin-2.css" rel="stylesheet">
+
+<!-- Metis Menu Plugin CSS -->
+<link href="../metisMenu/metisMenu.css" rel="stylesheet">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- Custom Fonts -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="" href="index.html"> <img src="../imgs/cp-logo.jpg"
+					height="50">
+				</a>
+			</div>
+			<!-- /.navbar-header -->
+
+			<ul class="nav navbar-top-links navbar-right">
+				<!-- /.dropdown -->
+				<li class="dropdown">{name}</li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> User
+								Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+				<!-- /.dropdown -->
+			</ul>
+			<!-- /.navbar-top-links -->
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group -->
+						</li>
+						<li><a href="index.html"><i class="fa fa-dashboard fa-fw"></i>
+								Dashboard</a></li>
+						<li>
+							<hr class="sidebar-border"> <a href="profile.html"><i
+								class="fa fa-user fa-fw"></i> Account</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="contracts.html"><i
+								class="fa fa-edit fa-fw"></i> Contracts</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="products.html"><i
+								class="fa fa-shopping-bag fa-fw"></i> Products</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="messages.html"><i
+								class="fa fa-envelope fa-fw"></i> Messages</a>
+						</li>
+						<li>
+							<hr class="sidebar-border"> <a href="#"><i
+								class="fa fa-wrench fa-fw"></i> Utilities<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="javascript:;"><i class="fa fa-cog fa-fw"></i>
+										Preferences</a></li>
+								<li><a href="javascript:;"><i
+										class="fa fa-question fa-fw"></i> Help and support</a></li>
+								<li><a href="scancode.html"><i
+										class="fa fa-credit-card fa-fw"></i> Scan a code</a></li>
+								<li><a href="search.html"><i class="fa fa-search fa-fw"></i>
+										Search for another account, product or contract</a></li>
+							</ul>
+						</li>
+						<li class="navbar-top-links-replacement">
+							<hr class="sidebar-border"> <a href="login.html"><i
+								class="fa fa-sign-out fa-fw"></i>Sign out</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+			<!-- /.navbar-static-side -->
+		</nav>
+
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<div id="inner-container">
+					<div class="row">
+						<div id='myContractsInfo' class="col-lg-6 col-md-12">
+							<h4>See your new and previous contracts:</h4>
+							<p>Click on a row in the table below to view the contract
+								details</p>
+							<table id='myContracts'
+								class="interactive-table table table-striped">
+								<thead>
+									<tr>
+										<th>CID</th>
+										<th>Partner</th>
+										<th>Value</th>
+										<th>Confirmed</th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<div align='center' id='myContractsInfoTxt'>
+							
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<div class="search-options">
+								<h4>Search Options</h4>
+
+								<p>Search for a whole id, or just a part of it, or leave the
+									field blank to exclude a criteria</p>
+								<div class='col-lg-7 col-md-12'>
+									<span>Account To: </span> <input id='aidToIn' class='form-control-small'>
+									<span>Account From:</span> <input id='aidFromIn' class='form-control-small'>
+									<span>Product</span> <input id='pidIn' class='form-control-small'>
+									<br> <label class="radio-inline"> <input
+										name="optradio" type="radio">Only send
+									</label> <label class="radio-inline"> <input name="optradio"
+										type="radio"> Only receive
+									</label>
+								</div>
+								<div class='col-lg-5 col-md-12'>
+									<div>
+										<label>Filter by date range</label> 
+										<input placeholder='From' id='minDateIn' style='width:50px;'>
+										<input style='width:50px;' placeholder='To' id='maxDateIn'> <i class='fa fa-fw fa-calendar fa-lg'></i>
+									</div>
+									<br>
+									<p>Sort results by:</p>
+									<label id='sortOldIn' class="radio-inline"> <input name="optradio2"
+										type="radio">Old</label> 
+										<label class="radio-inline"> <input name="optradio2"
+										type="radio">Recent</label>
+										<br> <br>
+									<button id='searchBt' class='btn btn-cp'>Search</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.row -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+
+							<hr>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="panel panel-default pane">
+								<div class="panel-heading">
+
+									<h4>Write a new contract</h4>
+								</div>
+								<div class="panel-body">
+									<div class="col-lg-5 col-md-12">
+
+										<div class="form-group">
+
+											<select id='myProducts' multiple class="form-control">
+
+											</select>
+
+
+										</div>
+									</div>
+									<div class='col-lg-1' align='center' style='padding-top: 30px;'
+										class='centered'>
+
+										<button id='moveRightBt'
+											class='btn btn-cp btn-small btn-vertical'>&rarr;</button>
+
+										<button id='moveLeftBt'
+											class='btn btn-cp btn-small btn-vertical'>&larr;</button>
+
+										<button id='productDetailsBt' class='btn btn-primary'>
+											<i class='fa fa-fw fa-search'></i>
+										</button>
+
+
+									</div>
+
+									<div class="col-lg-5 col-md-12">
+
+										<div class="form-group">
+
+
+											<select id='myChosenProducts' multiple class="form-control">
+
+											</select>
+
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<div class="form-group input-group">
+											<input id='aidToIn' placeholder="To" class="form-control">
+											<span class="input-group-addon"><a href="javascript:;">Search</a></span>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<div class="form-group input-group">
+											<input id='valueIn' placeholder="Value" class="form-control">
+											<span class="input-group-addon"><a href="javascript:;">£</a></span>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12">
+										<button id='sendContractBt' type="button" class="btn btn-primary"
+											style="width: 80px;">
+											Send
+											</button>
+											<div align='center' id='contractErrBox'>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.col-lg-12 -->
+					</div>
+					<!-- /.row -->
+				</div>
+			</div>
+			<!-- /.container-fluid -->
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+	<!-- Modal -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog"
+		tabindex="-1" id="contractModal" class="modal fade"
+		style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button id='closeModalBt' aria-hidden="true" data-dismiss="modal"
+						class="close" type="button">×</button>
+					<h4 id='newCidTxt' id='modalTitle' class="modal-title">CID</h4>					
+				</div>
+				<div class="modal-body"></div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<a style='display: none;' data-toggle='modal' href='#contractModal'
+		id='showModalBt'> </a>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../metisMenu/metisMenu.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../js/sb-admin-2.js"></script>
+
+	<!-- Page JavaScript -->
+	<script src="../js/contract.js"></script>
+
+</body>
+
+</html>

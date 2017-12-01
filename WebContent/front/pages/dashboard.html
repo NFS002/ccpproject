@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CP Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../stylesheets/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Metis Menu Plugin CSS -->
+    <link href="../metisMenu/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="" href="index.html">
+                <img src="../imgs/cp-logo.jpg" height="50">
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+            <!-- /.dropdown -->
+            <li id='navNameTxt' class="dropdown">
+                {name}
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="profile.html"><i class="fa fa-user fa-fw"></i> Account</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="contracts.html"><i class="fa fa-edit fa-fw"></i> Contracts</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="products.html"><i class="fa fa-shopping-bag fa-fw"></i> Products</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="messages.html"><i class="fa fa-envelope fa-fw"></i> Messages</a>
+                    </li>
+                    <li>
+                        <hr class="sidebar-border">
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Utilities<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="javascript:;"><i class="fa fa-cog fa-fw"></i> Preferences</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><i class="fa fa-question fa-fw"></i> Help and support</a>
+                            </li>
+                            <li>
+                                <a href="scancode.html"><i class="fa fa-credit-card fa-fw"></i> Scan a code</a>
+                            </li>
+                            <li>
+                                <a href="search.html"><i class="fa fa-search fa-fw"></i> Search for another account, product or contract</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-top-links-replacement">
+                        <hr class="sidebar-border">
+                        <a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Sign out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div id="inner-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-user fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>User Profile</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-history fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>See your product history</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-file-text-o fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>Write a new contract</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h2>Dashboard</h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>This is the home page or `Dashboard' for a logged in user, Account information is fully loaded before the user reaches the page.
+                                    If a user cannot log in, they cannot reach this page. This page provides several direct shortcuts to some of the more frequently used CCP
+                                    user actions, such as writing an sending a new contract, as well as a recent notification panel, which is updated frequently without
+                                    reloading the page, and shows information such as when a new contract or messsage is received. The navigation bar at the top of the page provide a
+                                    link back to the brands main website by clicking their on its logo on the far left, or sign out of the current user session, and delete all currently loaded user data
+                                    from the server, by clicking the 'Sign out' button on the right. The breadrumbs directly below this show the user what page s/he is on
+                                    and anytime they find themselves on a different page, they can retrace their steps, or learn quickly how the intended route back to that page.
+                                    The menu on the left provides a similar functionality, but it is more comprehensive, as any CCP intened for users page can be accessed directly
+                                    from this menu. Some of the item on the meny ('Utilities' and 'Accounts') are two tiered, and when clicking on these items. a sub menu appears below.
+                                    All other menu items are linked directly to another CCP user page. The search form at the top of this menu searches for keywords
+                                    across all of the functionality provided within these pages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="panel ">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i> Notifications
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div id='notificationsGroup' class="list-group">
+                                </div>
+                                <!-- /.list-group -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../metisMenu/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../js/sb-admin-2.js"></script>
+
+<!-- Dashboard JavaScript -->
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
+
+
+
